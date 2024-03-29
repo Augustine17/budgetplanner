@@ -1,0 +1,101 @@
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+main h1 {
+    text-align: center;
+}
+
+main .header {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+main .header div {
+    font-size: x-large;
+    border-radius: 5px;
+    padding: 1rem;
+    font-weight: 600;
+    width: 100%;
+}
+
+.remove-list-item {
+    background-color: #6C757D;
+    color: white;
+    position: absolute;
+    border: none;
+    border-radius: 50%;
+    padding: 0 0.3rem;
+    right: 1rem;
+}
+ 
+main .add-expenses {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+main .add-expenses form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+main .add-expenses form .input-fields {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+main .add-expenses form .input-fields .input-field {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 0.5rem;
+}
+
+main .add-expenses form button {
+    align-self: flex-start;
+    font-size: large;
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+input {
+    padding: 0.6rem 0.8rem;
+    font-size: large;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+h2 {
+    font-weight: 600;
+}
+
+
+
+@media screen and (max-width: 426px) {
+    main {
+        padding: 1rem;
+        gap: 2rem;
+    }
+    main .header {
+        flex-wrap: wrap;
+    }
+    main .header div {
+        font-size: 15px;
+    }
+    main .add-expenses form .input-fields {
+        gap: 1rem;
+    }
+}
